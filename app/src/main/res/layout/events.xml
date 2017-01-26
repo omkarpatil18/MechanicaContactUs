@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/type_events"
+                android:background="@color/cardview_shadow_start_color"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:id="@+id/events1"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/events1_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/events1"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/events1_image"
+                android:layout_toRightOf="@+id/events1_image"
+                android:layout_below="@id/events1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/events1_name"
+                    android:padding="1dp"
+                    android:fontFamily="@android:"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/events1_name" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/events1_name"
+                    android:src="@drawable/ic_email_black_24dp"
+                    android:id="@+id/mail_events1" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/events1_name"
+                    android:layout_toEndOf="@+id/mail_events1"
+                    android:layout_toRightOf="@+id/mail_events1"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:id="@+id/phone_events1"
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/type_events"
+                android:background="@color/cardview_shadow_start_color"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:id="@+id/events2"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/events2_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/events2"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/events2_image"
+                android:layout_toRightOf="@+id/events2_image"
+                android:layout_below="@id/events2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/events2_name"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/events2_name" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/events2_name"
+                    android:src="@drawable/ic_email_black_24dp"
+                    android:id="@+id/mail_events2" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/events2_name"
+                    android:layout_toEndOf="@+id/mail_events2"
+                    android:layout_toRightOf="@+id/mail_events2"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:id="@+id/phone_events2"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

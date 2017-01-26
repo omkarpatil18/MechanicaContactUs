@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">ContactUs</string>
+
+    <string name="type_secy">Secretary</string>
+
+    <string name="secy1_name">M Vidyadhar</string>
+    <string name="secy1_email">m.vidyadhar95@gmail.com</string>
+    <string name="secy1_phone">9952044531</string>
+
+    <string name="secy2_name">S Chandra vadan</string>
+    <string name="secy2_email">scvchandras@gmail.com</string>
+    <string name="secy2_phone">9884181579</string>
+
+
+    <string name="type_joint_secy">Joint Secretary</string>
+
+    <string name="joint_secy_name">Ankit Jain</string>
+    <string name="joint_secy_email">bhaiji.ankitjain1993@gmail.com</string>
+    <string name="joint_secy_phone">9043807215</string>
+
+
+    <string name="type_events">Events</string>
+
+    <string name="events1_name">K Akhil</string>
+    <string name="events1_email">akhilkollu96@gmail.com</string>
+    <string name="events1_phone">9176493264</string>
+
+    <string name="events2_name">M V Suhaas</string>
+    <string name="events2_email">suhaasmekala@gmail.com</string>
+    <string name="events2_phone">8220154858</string>
+
+
+    <string name="type_student_relations">Student Relations</string>
+
+    <string name="student_relations1_name">Naveen Kanna M</string>
+    <string name="student_relations1_email">naveenkanna28@gmail.com</string>
+    <string name="student_relations1_phone">9087295757</string>
+
+    <string name="student_relations2_name">T Sumanth Kalyan</string>
+    <string name="student_relations2_email">sumanth.kalyan79@gmail.com</string>
+    <string name="student_relations2_phone">9790465204</string>
+
+
+    <string name="type_spons_pr">Sponsorship &amp; Public Relations</string>
+
+    <string name="spons_pr1_name">Hitesh Malla</string>
+    <string name="spons_pr1_email">hitesh.m95@gmail.com</string>
+    <string name="spons_pr1_phone">9087863969</string>
+
+    <string name="spons_pr2_name">Kartheek K</string>
+    <string name="spons_pr2_email">kartheek301096@gmail.com</string>
+    <string name="spons_pr2_phone">9677077500</string>
+
+
+    <string name="type_web_mob_ops">Web &amp; Mobile Operations</string>
+
+    <string name="web_mob_ops_name">K Venkat Teja</string>
+    <string name="web_mob_ops_email">teja.kunisetty@gmail.com</string>
+    <string name="web_mob_ops_phone">7200317939</string>
+
+
+    <string name="type_design_media">Design &amp; Media</string>
+
+    <string name="design_media_name">M Ravi Theja</string>
+    <string name="design_media_email">ravithejamavuri@gmail.com</string>
+    <string name="design_media_phone">9790464008</string>
+
+
+    <string name="type_finance">Finance</string>
+
+    <string name="finance1_name">B Bhanu Mitra</string>
+    <string name="finance1_email">bhanumitrab@gmail.com</string>
+    <string name="finance1_phone">9087863231</string>
+
+    <string name="finance2_name">S Maneesha Devi</string>
+    <string name="finance2_email">rajsridevi598@gmail.com</string>
+    <string name="finance2_phone">9790469606</string>
+
+
+    <string name="type_fr">Facilities &amp; Requirements</string>
+
+    <string name="fr_name">Cesh J</string>
+    <string name="fr_email">ceshcool@gmail.com</string>
+    <string name="fr_phone">9940451199</string>
+
+
+    <string name="type_qms">QMS</string>
+
+    <string name="qms_name">S Bharath</string>
+    <string name="qms_email">rocky.bharath1997@gmail.com</string>
+    <string name="qms_phone">9791336202</string>
+
+
+</resources>
