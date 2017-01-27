@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        style="@style/cardview">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/department_type"
+                android:text="@string/type_fr"
+                android:id="@+id/fr"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                style="@style/circle_imageview"
+                android:id="@+id/fr_image"
+                android:layout_below="@+id/fr"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/fr_image"
+                android:layout_toRightOf="@+id/fr_image"
+                android:layout_below="@id/fr">
+                <TextView
+                    style="@style/profile_name"
+                    android:text="@string/fr_name"
+                    android:id="@+id/fr_name" />
+
+                <ImageButton
+                    style="@style/image_button"
+                    android:layout_below="@+id/fr_name"
+                    android:src="@drawable/ic_email_black_24dp"
+                    android:id="@+id/mail_fr" />
+
+                <ImageButton
+                    style="@style/image_button"
+                    android:layout_below="@+id/fr_name"
+                    android:layout_toEndOf="@+id/mail_fr"
+                    android:layout_toRightOf="@+id/mail_fr"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:id="@+id/phone_fr"
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>

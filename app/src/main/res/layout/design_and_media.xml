@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        style="@style/cardview">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/department_type"
+                android:text="@string/type_design_media"
+                android:id="@+id/design_media"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                style="@style/circle_imageview"
+                android:id="@+id/design_media_image"
+                android:layout_below="@+id/design_media"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/design_media_image"
+                android:layout_toRightOf="@+id/design_media_image"
+                android:layout_below="@id/design_media">
+                <TextView
+                    style="@style/profile_name"
+                    android:text="@string/design_media_name"
+                    android:id="@+id/design_media_name" />
+
+                <ImageButton
+                    style="@style/image_button"
+                    android:layout_below="@+id/design_media_name"
+                    android:src="@drawable/ic_email_black_24dp"
+                    android:id="@+id/mail_design_media" />
+
+                <ImageButton
+                    style="@style/image_button"
+                    android:layout_below="@+id/design_media_name"
+                    android:layout_toEndOf="@+id/mail_design_media"
+                    android:layout_toRightOf="@+id/mail_design_media"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:id="@+id/phone_design_media"
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>
