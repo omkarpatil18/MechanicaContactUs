@@ -1,102 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="20dp">
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_marginBottom="30dp">
 
-    <android.support.v7.widget.CardView
-        style="@style/cardview"
-        android:layout_marginRight="20dp">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                style="@style/department_type"
-                android:text="@string/type_events"
-                android:id="@+id/events1"/>
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/events1_image"
-                style="@style/circle_imageview"
-                android:layout_below="@+id/events1"/>
+        <android.support.v7.widget.CardView
+            style="@style/cardview"
+            android:layout_marginRight="10dp"
+            app:cardElevation="@dimen/card_elevation"
+            android:layout_marginEnd="10dp">
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/events1_image"
-                android:layout_toRightOf="@+id/events1_image"
-                android:layout_below="@id/events1">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <TextView
-                    style="@style/profile_name"
-                    android:text="@string/events1_name"
-                    android:id="@+id/events1_name" />
+                    style="@style/department_type"
+                    android:background="@color/shade3"
+                    android:text="@string/type_events"
+                    android:id="@+id/events1"/>
 
-                <ImageButton
-                    style="@style/image_button"
-                    android:layout_below="@+id/events1_name"
-                    android:src="@drawable/ic_email_black_24dp"
-                    android:id="@+id/mail_events1" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:id="@+id/events1_image"
+                    style="@style/circle_imageview"
+                    android:layout_below="@+id/events1"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/events1_image"
+                    android:layout_toRightOf="@+id/events1_image"
+                    android:layout_below="@id/events1"
+                    android:gravity="center">
+                    <TextView
+                        style="@style/profile_name"
+                        android:text="@string/events1_name"
+                        android:id="@+id/events1_name" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/events1_name"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true">
 
-                <ImageButton
-                    style="@style/image_button"
-                    android:layout_below="@+id/events1_name"
-                    android:layout_toEndOf="@+id/mail_events1"
-                    android:layout_toRightOf="@+id/mail_events1"
-                    android:src="@drawable/ic_phone_black_24dp"
-                    android:id="@+id/phone_events1"
-                    />
+                        <ImageButton
+                            style="@style/image_button"
+                            android:src="@drawable/ic_email_black_24dp"
+                            android:id="@+id/mail_events1"
+                            android:layout_marginRight="@dimen/image_button_margin"
+                            android:layout_marginEnd="@dimen/image_button_margin"/>
 
+                        <ImageButton
+                            style="@style/image_button"
+                            android:src="@drawable/ic_phone_black_24dp"
+                            android:id="@+id/phone_events1" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
 
             </RelativeLayout>
 
-        </RelativeLayout>
+        </android.support.v7.widget.CardView>
 
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        style="@style/cardview">
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <TextView
-                style="@style/department_type"
-                android:text="@string/type_events"
-                android:id="@+id/events2"/>
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/events2_image"
-                style="@style/circle_imageview"
-                android:layout_below="@+id/events2"/>
+        <android.support.v7.widget.CardView
+            style="@style/cardview"
+            app:cardElevation="@dimen/card_elevation">
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/events2_image"
-                android:layout_toRightOf="@+id/events2_image"
-                android:layout_below="@id/events2">
+                android:layout_height="wrap_content">
                 <TextView
-                    style="@style/profile_name"
-                    android:text="@string/events2_name"
-                    android:id="@+id/events2_name" />
+                    style="@style/department_type"
+                    android:text="@string/type_events"
+                    android:id="@+id/events2"
+                    android:background="@color/shade3"/>
 
-                <ImageButton
-                    style="@style/image_button"
-                    android:layout_below="@+id/events2_name"
-                    android:src="@drawable/ic_email_black_24dp"
-                    android:id="@+id/mail_events2" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:id="@+id/events2_image"
+                    style="@style/circle_imageview"
+                    android:layout_below="@+id/events2"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/events2_image"
+                    android:layout_toRightOf="@+id/events2_image"
+                    android:layout_below="@id/events2"
+                    android:gravity="center">
+                    <TextView
+                        style="@style/profile_name"
+                        android:text="@string/events2_name"
+                        android:id="@+id/events2_name" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/events2_name"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true">
 
-                <ImageButton
-                    style="@style/image_button"
-                    android:layout_below="@+id/events2_name"
-                    android:layout_toEndOf="@+id/mail_events2"
-                    android:layout_toRightOf="@+id/mail_events2"
-                    android:src="@drawable/ic_phone_black_24dp"
-                    android:id="@+id/phone_events2"
-                    />
+                        <ImageButton
+                            style="@style/image_button"
+                            android:src="@drawable/ic_email_black_24dp"
+                            android:id="@+id/mail_events2"
+                            android:layout_marginRight="@dimen/image_button_margin"
+                            android:layout_marginEnd="@dimen/image_button_margin"/>
 
+                        <ImageButton
+                            style="@style/image_button"
+                            android:src="@drawable/ic_phone_black_24dp"
+                            android:id="@+id/phone_events2" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
             </RelativeLayout>
-        </RelativeLayout>
 
-    </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
 
-</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -3,10 +3,11 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="wrap_content"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:scrollbarStyle="outsideOverlay">
     <LinearLayout
         android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <include layout="@layout/secretary"/>
         <include layout="@layout/joint_secretary"/>
@@ -16,6 +17,7 @@
         <include layout="@layout/web_and_mobile_operations"/>
         <include layout="@layout/design_and_media"/>
         <include layout="@layout/finance"/>
+        <include layout="@layout/facilities_and_requirements"/>
         <include layout="@layout/qms"/>
 
     </LinearLayout>

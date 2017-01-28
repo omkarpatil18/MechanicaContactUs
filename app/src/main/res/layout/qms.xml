@@ -1,54 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_marginBottom="30dp">
 
-    <android.support.v7.widget.CardView
-        style="@style/cardview">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                style="@style/department_type"
-                android:text="@string/type_fr"
-                android:id="@+id/fr"/>
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                style="@style/circle_imageview"
-                android:id="@+id/fr_image"
-                android:layout_below="@+id/fr"/>
+        <android.support.v7.widget.CardView
+            style="@style/cardview"
+            app:cardElevation="@dimen/card_elevation">
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/fr_image"
-                android:layout_toRightOf="@+id/fr_image"
-                android:layout_below="@id/fr">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <TextView
-                    style="@style/profile_name"
-                    android:text="@string/fr_name"
-                    android:id="@+id/fr_name" />
+                    style="@style/department_type"
+                    android:text="@string/type_qms"
+                    android:id="@+id/qms"
+                    android:background="@color/shade3"/>
 
-                <ImageButton
-                    style="@style/image_button"
-                    android:layout_below="@+id/fr_name"
-                    android:src="@drawable/ic_email_black_24dp"
-                    android:id="@+id/mail_fr" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    style="@style/circle_imageview"
+                    android:id="@+id/qms_image"
+                    android:layout_below="@+id/qms"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/qms_image"
+                    android:layout_toRightOf="@+id/qms_image"
+                    android:layout_below="@id/qms"
+                    android:gravity="center">
+                    <TextView
+                        style="@style/profile_name"
+                        android:text="@string/qms_name"
+                        android:id="@+id/qms_name" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/qms_name"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true">
 
-                <ImageButton
-                    style="@style/image_button"
-                    android:layout_below="@+id/fr_name"
-                    android:layout_toEndOf="@+id/mail_fr"
-                    android:layout_toRightOf="@+id/mail_fr"
-                    android:src="@drawable/ic_phone_black_24dp"
-                    android:id="@+id/phone_fr"
-                    />
+                        <ImageButton
+                            style="@style/image_button"
+                            android:src="@drawable/ic_email_black_24dp"
+                            android:id="@+id/mail_qms"
+                            android:layout_marginRight="@dimen/image_button_margin"
+                            android:layout_marginEnd="@dimen/image_button_margin"/>
 
+                        <ImageButton
+                            style="@style/image_button"
+                            android:src="@drawable/ic_phone_black_24dp"
+                            android:id="@+id/phone_qms" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
 
             </RelativeLayout>
 
-        </RelativeLayout>
+        </android.support.v7.widget.CardView>
 
-    </android.support.v7.widget.CardView>
-
-</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

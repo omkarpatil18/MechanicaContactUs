@@ -89,5 +89,8 @@ eve
     <string name="qms_email">rocky.bharath1997@gmail.com</string>
     <string name="qms_phone">9791336202</string>
 
+    <string name="tag_phone">phone</string>
+    <string name="tag_mail">mail</string>
+
 
 </resources>
